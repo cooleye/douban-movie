@@ -1,0 +1,68 @@
+@import '../../common/loading.wxss';
+
+.hot-container{
+  width:100%;
+  background-color: #eee;
+}
+
+.hot-container .hot-item{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  text-align: left;
+}
+
+.hot-container .hot-item .hot-item-image{
+  flex: 2;
+}
+.hot-container .hot-item .hot-item-info{
+  flex: 3;
+}
+.hot-container .hot-item .hot-item-image image{
+  width:260rpx;
+  height: 400rpx
+}
+
+.hot-item-info-title{
+  padding-top: 10rpx;
+  font-size: 50rpx;
+}
+.hot-item-info-rate{
+  padding-top: 20rpx;
+  font-size: 36rpx;
+}
+
+
+.loading{
+  width: 100%;height: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+
+.upper-loading{
+  width:100%;
+  height: 60rpx;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 20rpx;
+}
+.upper-loading image{
+  width: 60rpx;height: 60rpx;
+}
+
+.lower-loading{
+  width:100%;
+  height: 60rpx;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.lower-loading image{
+   width: 60rpx;height: 60rpx;
+}

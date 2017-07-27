@@ -1,0 +1,49 @@
+<view class="hot-container">
+   
+   <!-- loading -->
+   <view  wx:if="{{isLoading}}" class="isLoading">
+      <view class="spinner">
+          <view class="rect1"></view>
+          <view class="rect2"></view>
+          <view class="rect3"></view>
+          <view class="rect4"></view>
+          <view class="rect5"></view>
+      </view>
+   </view>
+
+
+   <scroll-view  scroll-y style="height: 1100rpx;" 
+                 bindscrolltoupper="upper" 
+                 bindscrolltolower="lower" 
+                 bindscroll="scroll"
+                 scroll-with-animation="true"
+                 enable-back-to-top="true"
+                 >
+          <view class="upper-loading"  wx:if="{{refresh}}">
+            <image src="../images/loading.gif"></image>
+             <!--<text>正在刷新。。。</text>-->
+          </view>
+          <block wx:for="{{hotMovies}}"  wx:for-item="item" wx:key="index">
+            <navigator url="../detail/detail?id={{item.id}}&filmname={{item.title}}&cover={{item.cover}}&rate={{item.rate}}">
+            <view class="hot-item">
+                <view class="hot-item-image">
+                  <image src="{{item.cover}}"></image>
+                </view>
+                <view class="hot-item-info">
+                  <view class="hot-item-info-title">
+                      <text>{{item.title}}</text>
+                  </view>
+                  <view class="hot-item-info-rate">
+                      <text>{{item.rate}}</text>
+                  </view>
+                </view>
+            </view>
+            </navigator>
+        </block>
+        <view  class="lower-loading"  wx:if="{{loadmore}}">
+            <image src="../images/loading.gif"></image>
+            <!--<text>正在加载。。。</text>-->
+        </view>
+   </scroll-view>
+   
+</view>

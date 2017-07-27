@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/hot/hot",
+    "pages/new/new",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#99f",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "正在热映",
+        "iconPath":"pages/images/movie-n.png",
+        "selectedIconPath":"pages/images/movie-a.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "即将上映",
+        "iconPath": "pages/images/soon-n.png",
+        "selectedIconPath": "pages/images/soon-a.png"
+      }
+    ],
+    "color":"#aaa",
+    "selectedColor":"#99f",
+    "backgroundColor":"#fafafa",
+    "borderStyle":"white"
+  }
+}
