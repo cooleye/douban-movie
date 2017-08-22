@@ -28,3 +28,7 @@ App({
     userInfo:null
   }
 })
+
+
+// https://movie.douban.com
+// https://m.douban.com
